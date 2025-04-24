@@ -18,3 +18,118 @@ function App() {
   );
 }
 export default App;
+
+/*   undersatnding react app/flow
+
+    index.html --->  main.jsx   <----  App.jsx
+    root <--. app this will come from main.jsx
+
+
+
+    // Re-Write App
+
+import "./App.css";
+
+function App() {
+  return <button>Hello world</button>
+}
+
+export default App;
+
+
+// our 1st component
+
+
+import "./App.css";
+
+function Title(){
+    return <h1> IAm the title</h1>
+}
+
+
+function App() {
+    return (
+          <div>
+            <Title/>
+          </div>
+    );
+       
+}
+export default App;
+
+function Title(){
+    return <h1> IAm the title</h1>
+}
+function Description(){
+    return <h3>Iam the Description</h3>
+}
+
+function App(){
+    return (
+        <div>
+        <Title/>
+        <Description/>
+        </div>
+    );
+}
+
+export default App;
+
+
+//React Fragment
+
+return (
+    <div>
+      <h1>Hello</h1>
+      <p>World</p>
+    </div>
+  )
+
+
+  But using a <div> just for grouping can unnecessarily clutter your HTML, 
+  which can mess with your CSS or layout.
+
+  React.Fragment lets you group elements without adding extra DOM nodes below is the example
+
+  return (
+    <React.Fragment>
+      <h1>Hello</h1>
+      <p>World</p>
+    </React.Fragment>
+  )
+
+  return (
+    <>
+      <h1>Hello</h1>
+      <p>World</p>
+    </>
+  )
+
+  This is exactly the same as using React.Fragment, just cleaner.
+
+
+  🔹 When Should You Use React.Fragment?
+
+When you don’t want extra nodes in the DOM
+
+Inside components that return lists of elements
+
+When using CSS frameworks where extra divs break styling/layout
+
+
+function Title(){
+    let name="krishna";
+    return (
+        <div>
+         <p> 2 * 2 =  { 2 * 2 }</p>
+         <p>Hi, {name.toUppercase()}</p>
+        </div>                       
+    );
+    
+}
+//  you have written code in cruly braces it willconsider as js code
+export default Title;
+
+
+// check once  structuring compoments
+ */
