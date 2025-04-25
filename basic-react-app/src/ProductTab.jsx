@@ -19,3 +19,24 @@ export default function ProductTab() {
     </div>
   );
 }
+
+/* Passing Arrays to props
+import Product from "./Product.jsx";
+
+function ProductTab() {
+  let options = ["hi-tech", "durable", "fast"];
+  let features2 = { a: "hi-tech", b: "durable", c: "fast" };
+  return (
+    <>
+      <Product title="phone" price={45969} featuresArray={options} />
+      <Product title="laptop" price={21999} featuresObject={features2} />
+      <Product title="pen" price={20} />
+    </>
+  );
+}
+
+export default ProductTab;
+
+
+
+*/

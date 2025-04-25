@@ -133,3 +133,34 @@ export default Title;
 
 // check once  structuring compoments
  */
+
+/*
+   import User from "./User.jsx";
+
+function App() {
+    return (
+      <div>
+        <h1>Welcome to the user INfo</h1>
+        <User name="krishna" age={24} />
+        <User name="Emily" age={30} />
+      </div>
+    );
+}
+
+export default App;
+
+
+import "./App.css";   // Passing Arrays to props
+import ProductTab from "./ProductTab.jsx";
+
+function App(){
+    return (
+      <div>
+        <ProductTab/>
+      </div>
+    );
+}
+
+export default App;
+
+*/
