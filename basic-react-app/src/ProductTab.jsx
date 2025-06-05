@@ -37,6 +37,18 @@ function ProductTab() {
 
 export default ProductTab;
 
+import Product from "./Product.jsx";
+function ProductTab()
+{
+  return (
+    <>
+    <Product/>
+     <Product/>
+      <Product/>
+    </>
+  );
+}
 
+export default ProductTab;
 
 */
